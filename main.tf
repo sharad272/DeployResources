@@ -4,7 +4,7 @@ variable "web_app_names" {
 }
 
 # Create a resource for each web app using count.index
-resource "azurerm_app_service" "web_app" {
+resource "azurerm_linux_web_app" "web_app" {
   count = length(var.web_app_names)
 #  name                = "${var.web_app_names[count.index]}-app-service"
   name                = var.web_app_names[count.index]
