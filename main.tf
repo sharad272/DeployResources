@@ -13,6 +13,6 @@ resource "azurerm_linux_web_app" "web_app" {
   service_plan_id = "/subscriptions/f545f248-4fb2-4f9c-a0cd-190c842b66d8/resourceGroups/research_development/providers/Microsoft.Web/serverfarms/ASP-researchdevelopment-b0ec"
 
   site_config {
-    node_version = "14.17"
+    linux_fx_version = "NODE|18"
   }
 }
