@@ -5,7 +5,7 @@ name: Terraform Example
 on:
   push:
     branches:
-      - terraform
+      - main
 
 jobs:
   terraform:
