@@ -1,6 +1,6 @@
 # terraform.yaml
 
-name: Terraform Example
+name: Terraform
 
 on:
   push:
