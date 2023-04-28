@@ -1,3 +1,7 @@
+provider "azurerm" {
+  features {}
+}
+
 # Define a list of web app names
 variable "web_app_names" {
   default = ["webapp1_github", "webapp2_github"]
@@ -6,7 +10,7 @@ variable "web_app_names" {
 # Create a resource for each web app using count.index
 resource "azurerm_app_service" "web_app" {
   count = length(var.web_app_names)
-#  name                = "${var.web_app_names[count.index]}-app-service"
+
   name                = var.web_app_names[count.index]
   location            = "eastus"
   resource_group_name = "research_development"
