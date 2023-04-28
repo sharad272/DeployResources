@@ -13,6 +13,6 @@ resource "azurerm_windows_web_app" "web_app" {
   service_plan_id = "/subscriptions/f545f248-4fb2-4f9c-a0cd-190c842b66d8/resourceGroups/research_development/providers/Microsoft.Web/serverfarms/ASP-researchdevelopment-b0ec"
 
   site_config {
-    dotnet_framework_version = "v5.0"  
+    dotnet_framework_version = "v6.0"  
   }
 }
